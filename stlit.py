@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import streamlit_pandas as sp
 from streamlit_shap import st_shap
 import joblib
 import shap
