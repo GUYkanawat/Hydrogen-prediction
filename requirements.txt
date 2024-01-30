@@ -15,4 +15,4 @@ streamlit_timeline==0.0.2
 streamlit_vis_timeline==0.3.0
 tensorflow==2.15.0rc1
 tensorflow_intel==2.15.0rc1
-~treamlit==1.28.2
+streamlit==1.28.2
