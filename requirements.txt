@@ -10,7 +10,7 @@ seaborn
 shap
 streamlit
 streamlit_pandas
-streamlit_shap=
+streamlit_shap
 streamlit_timeline
 streamlit_vis_timeline
 tensorflow
