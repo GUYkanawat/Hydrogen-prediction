@@ -673,10 +673,9 @@ create_data = {
 with st.sidebar:
     st.title("Data Filtering :mag:")
     st.caption("(Use to select/find the desired data range)")
-all_widgets = sp.create_widgets(df, create_data, ignore_columns=["ID",'Reference'])
-res = sp.filter_df(df, all_widgets)
+
 #DATA########
-st.write(res)
+
 st.markdown(":point_left: <span style='color:Maroon'>***You can select the desired categoricals from the options on the left.***",unsafe_allow_html=True)
 if st.button("Assumption info"):
     st.caption("-- Assumption --")
