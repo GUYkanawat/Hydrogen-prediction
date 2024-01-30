@@ -23,8 +23,7 @@ def load_data():
     return df
 
 st.title("Machine Learning for Predictive Modelling and Optimization of Hydrogen Production from Biomass Gasification")
-st.markdown("""Credit : 
-                      asdfefaff""",unsafe_allow_html=True)
+
 
 st.divider()
 #---------------------------------------datail-------------------------------------------------#
