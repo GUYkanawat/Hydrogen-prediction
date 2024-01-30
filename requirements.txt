@@ -8,8 +8,8 @@ scikit_optimize==0.9.0
 scipy==1.12.0
 seaborn==0.13.2
 shap==0.42.1
-streamlit
-streamlit_pandas
+streamlit==1.30.0
+streamlit_pandas==1.0.0
 streamlit_shap==1.0.2
 streamlit_timeline==0.0.2
 streamlit_vis_timeline==0.3.0
