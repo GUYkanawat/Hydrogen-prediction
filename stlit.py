@@ -3,7 +3,7 @@ import pandas as pd
 from streamlit_shap import st_shap
 import joblib
 import shap
-import altair as alt
+
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import  mean_absolute_error, mean_squared_error, r2_score
@@ -11,7 +11,7 @@ from scipy.stats import pearsonr
 import seaborn as sns;sns.set()
 import numpy as np
 from streamlit_timeline import st_timeline
-from st_aggrid import AgGrid
+
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
     return df.to_csv().encode('utf-8')
