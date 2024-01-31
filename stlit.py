@@ -619,6 +619,20 @@ x = data.loc[:, ~data.columns.isin(
      '205', 'atmospheric', 'slightly above atmospheric', 'slightly below atmospheric',
      'feed_LHV', 'feed_VM', 'feed_FC', 'other_feed_type', 'other_feed_shape',
      'calcium oxide','continuous', 'other_gas', 'other_bed', 'dolomite','N','O'])]
+button_style = """
+    <style>
+        div.stButton > button {
+            color: black;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 32px;
+        }
+    </style>
+"""
+st.markdown(button_style, unsafe_allow_html=True)
+st.subheader("Hydrogen Prediction")
+st.markdown(":point_down: <span style='color:Maroon'>***Click below!!!***",unsafe_allow_html=True)
 if st.button(':globe_with_meridians: Predict Hydrogen product'):
     prediction = clf.predict(unknown)
     Ans=(prediction*(71.5-3.1)+3.1)
