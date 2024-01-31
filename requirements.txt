@@ -80,7 +80,7 @@ oauthlib==3.2.2
 openpyxl==3.1.2
 opt-einsum==3.3.0
 packaging==23.1
-pandas==2.2.0
+pandas
 parso==0.8.3
 pearsonr==0.1.0
 pickleshare==0.7.5
