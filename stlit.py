@@ -10,7 +10,6 @@ from sklearn.metrics import  mean_absolute_error, mean_squared_error, r2_score
 from scipy.stats import pearsonr
 import seaborn as sns;sns.set()
 import numpy as np
-from streamlit_timeline import st_timeline
 
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
@@ -635,22 +634,6 @@ if st.button("More info"):
     complex = pd.read_excel('filling_data_complex.xlsx')
     st.write(complex)
     st.button("Back", type="primary")
-st.divider()
-st.header("	:round_pushpin: Working Timeline :spiral_calendar_pad:")
-
-items = [
-    {"id":"A","content": "Semester 1", "start": "2023-06-20","end":"2023-10-20","type":"background",},
-    {"id":"B","content": "Semester 2", "start": "2023-11-09","end":"2024-01-20","type":"background","style": "color: black; background-color: #fad1d0;"},
-    {"id": 1, "content": "collecting data", "start": "2023-06-20","end":"2023-07-20", "link_to": "data"},
-    {"id": 2, "content": "pearson", "start": "2023-07-09","end":"2023-08-20", "link_to": "pearson-correlation"},
-    {"id": 3, "content": "box plot", "start": "2023-08-16","end":"2023-09-20", "link_to": "boxplot"},
-    {"id": 4, "content": "modeling", "start": "2023-08-16","end":"2023-10-20", "link_to": "model-evaluation"},
-    {"id": 5, "content": "shap", "start": "2023-09-25","end":"2023-10-20", "link_to": "shapley-additive-explanations"},
-    {"id": 6, "content": "optimization", "start": "2023-11-09","end":"2023-12-20", "link_to": "data" },
-    {"id": 7, "content": "streamlit", "start": "2023-11-09","end":"2023-12-20"},
-]
-
-timeline = st_timeline(items, groups=[], options={}, height="200px",key=None)
 
 st.divider()
 #--------------------------------------DATA BASE--------------------------------------------------------#
