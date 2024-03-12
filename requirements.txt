@@ -1,10 +1,10 @@
 about-time==4.2.1
-absl-py==2.0.0       
+absl-py==2.0.0
 alive-progress==3.1.5
-altair==4.1.0        
-anyio==4.1.0         
-asgiref==3.7.2       
-asttokens==2.4.0     
+altair==4.1.0
+anyio==4.1.0
+asgiref==3.7.2
+asttokens==2.4.0
 astunparse==1.6.3
 attrs==23.1.0
 autograd==1.6.2
@@ -80,7 +80,7 @@ oauthlib==3.2.2
 openpyxl==3.1.2
 opt-einsum==3.3.0
 packaging==23.1
-pandas==2.2.0
+pandas
 parso==0.8.3
 pearsonr==0.1.0
 pickleshare==0.7.5
@@ -125,10 +125,10 @@ smmap==5.0.1
 sniffio==1.3.0
 sqlparse==0.4.4
 stack-data==0.6.2
-streamlit==1.30.0
+streamlit
 streamlit-aggrid==0.3.4.post3
 streamlit-component-dropfilltextarea==0.3.0
-streamlit-pandas==0.0.9
+streamlit-pandas
 streamlit-shap==1.0.2
 streamlit-terran-timeline==0.0.19
 streamlit-timeline==0.0.2
@@ -138,7 +138,7 @@ tensorboard==2.15.1
 tensorboard-data-server==0.7.2
 tensorflow==2.15.0rc1
 tensorflow-estimator==2.15.0
-tensorflow-intel==2.15.0rc1
+tensorflow-intel
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
 threadpoolctl==3.2.0
