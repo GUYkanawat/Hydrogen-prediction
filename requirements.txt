@@ -37,7 +37,7 @@ entrypoints==0.4
 et-xmlfile==1.1.0
 exceptiongroup==1.2.0
 executing==1.2.0
-extra-streamlit-components==0.1.60
+extra-streamlit-components
 fastapi==0.86.0
 flatbuffers==23.5.26
 fonttools==4.42.1
