@@ -37,7 +37,7 @@ entrypoints==0.4
 et-xmlfile==1.1.0
 exceptiongroup==1.2.0
 executing==1.2.0
-extra-streamlit-components==0.1.60
+extra-streamlit-components
 fastapi==0.86.0
 flatbuffers==23.5.26
 fonttools==4.42.1
@@ -87,7 +87,7 @@ matplotlib-inline==0.1.6
 mdurl==0.1.2
 ml-dtypes==0.2.0
 more-itertools==10.2.0
-my-streamlit-component==0.1
+my-streamlit-component
 mypy-extensions==1.0.0
 nh3==0.2.15
 numba==0.57.1
@@ -157,9 +157,9 @@ sqlparse==0.4.4
 stack-data==0.6.2
 starlette==0.20.4
 streamlit==1.32.1
-streamlit-aggrid==0.3.4.post3
-streamlit-component-dropfilltextarea==0.3.0
-streamlit-pandas==0.0.9
+streamlit-aggrid
+streamlit-component-dropfilltextarea
+streamlit-pandas
 streamlit-shap==1.0.2
 streamlit-terran-timeline==0.0.19
 streamlit-timeline==0.0.2
