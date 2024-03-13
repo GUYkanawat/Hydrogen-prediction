@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import streamlit_pandas as sp
-from streamlit_shap import st_shap
 import joblib
 import shap
 
@@ -785,13 +784,13 @@ with tab4:
                  " which helps to explain the model's prediction. They provide information about each"
                  " feature's relative contribution to the final forecast for a specific situation.")
         plt.figure()
-        st_shap(shap.plots.beeswarm(shap_values), height=300)
+        st.write(shap.plots.beeswarm(shap_values), height=300)
 
         explainer = shap.TreeExplainer(model)
         shap_values = explainer.shap_values(x_test)
 
-        st_shap(shap.force_plot(explainer.expected_value, shap_values[0, :], x_test.iloc[0, :]), height=200, width=1000)
-        st_shap(shap.force_plot(explainer.expected_value, shap_values[:1000, :], x_test.iloc[:1000, :]), height=400,width=1000)
+        st.write(shap.force_plot(explainer.expected_value, shap_values[0, :], x_test.iloc[0, :]), height=200, width=1000)
+        st.write(shap.force_plot(explainer.expected_value, shap_values[:1000, :], x_test.iloc[:1000, :]), height=400,width=1000)
 with tab3:
         col5,col6=st.columns(2)
         with col5:
