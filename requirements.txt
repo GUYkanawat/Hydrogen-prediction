@@ -84,14 +84,14 @@ ml-dtypes==0.2.0
 more-itertools==10.2.0
 my-streamlit-component==0.1
 mypy-extensions==1.0.0
-numba==0.57.1
+numba
 numpy
 oauthlib==3.2.2
 openpyxl==3.1.2
 opt-einsum==3.3.0
 outcome==1.3.0.post0
 packaging==23.1
-pandas==1.5.3
+pandas
 parso==0.8.3
 pearsonr==0.1.0
 pickleshare==0.7.5
