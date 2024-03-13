@@ -64,6 +64,7 @@ jsonschema-specifications==2023.11.2
 keras==2.15.0
 kiwisolver==1.4.5
 lasio==0.31
+libgl1-mesa-glx
 libclang==16.0.6
 llvmlite==0.40.1
 Markdown==3.5.1
