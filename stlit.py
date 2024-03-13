@@ -1,15 +1,17 @@
 import streamlit as st
 import pandas as pd
+import streamlit_pandas as sp
 from streamlit_shap import st_shap
 import joblib
 import shap
-import streamlit_pandas as sp
+
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import  mean_absolute_error, mean_squared_error, r2_score
 from scipy.stats import pearsonr
 import seaborn as sns;sns.set()
 import numpy as np
+
 
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
@@ -619,6 +621,7 @@ x = data.loc[:, ~data.columns.isin(
      '205', 'atmospheric', 'slightly above atmospheric', 'slightly below atmospheric',
      'feed_LHV', 'feed_VM', 'feed_FC', 'other_feed_type', 'other_feed_shape',
      'calcium oxide','continuous', 'other_gas', 'other_bed', 'dolomite','N','O'])]
+
 button_style = """
     <style>
         div.stButton > button {
@@ -671,9 +674,8 @@ with st.sidebar:
     st.caption("(Use to select/find the desired data range)")
 all_widgets = sp.create_widgets(df, create_data, ignore_columns=["ID",'Reference'])
 res = sp.filter_df(df, all_widgets)
-st.write(res)
 #DATA########
-
+st.write(res)
 st.markdown(":point_left: <span style='color:Maroon'>***You can select the desired categoricals from the options on the left.***",unsafe_allow_html=True)
 if st.button("Assumption info"):
     st.caption("-- Assumption --")
@@ -848,3 +850,4 @@ with tab3:
             st.write('<u style="font-size: 24px;">Test set</u>', unsafe_allow_html=True)
             eval_test = performance_evaluation(Y, df_pred["H2"])
 #-----------------------------------------------------------------------------------------------------#
+
